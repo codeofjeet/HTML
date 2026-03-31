@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+
+        fieldset {
+            width: 250px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+     <h1>Commonly Used Input Types in HTML Forms</h1>
+        <p>* &lt;input type="checkbox"&gt; :- creates a checkbox input element. It displays as a square box, checked when activated. Checkboxes enable users to select one or more options from a limited set of choices.
+
+            <form action="#">
+                <fieldset>
+                    <legend>Select Your Subjects:</legend>
+
+                    <input  type="checkbox" 
+                            name="check" 
+                            id="checkbox1" 
+                            value="html" checked>
+                    <label  for="checkbox1">HTML</label>
+            <br>
+
+                    <input  type="checkbox" 
+                            name="check" 
+                            id="checkbox2" 
+                            value="css">
+                    <label  for="checkbox2">CSS</label>
+            <br>
+
+                    <input  type="checkbox" 
+                            name="check" 
+                            id="checkbox3" 
+                            value="javascript">
+                    <label  for="checkbox3">JavaScript</label>
+                </fieldset>
+            </form>
+
+            <p>========================================================</p>
+
+        <p>* &lt;input type="date”&gt; :-  element provides a date picker interface for selecting dates. It allows users to input dates using a calendar widget, ensuring standardized date input across different browsers and devices. 
+
+             <form action="#">
+                <label for="date"></label>
+                <input type="date" id="date" value="2024-05-02">
+            </form>
+
+            <p>========================================================</p>
+
+        <p>* &lt;input type="time"&gt; :- element creates a time input field, allowing users to select a time (including hours and minutes) from a pre-defined list or by entering it manually. It provides a standardized way to input time values, enhancing user experience in forms that require time-based inputs.
+
+            <form action="#">
+                <label for="time">Input Time:</label>
+                <input type="time" name="time" id="time">
+            </form>
+
+            <p>========================================================</p>
+
+        <p>* &lt;input type="file"&gt; :- element is used to create a file input box in forms. It allows users to browse and select files to upload from the devices. When the form is submitted, the selected file(s) can be uploaded to the server.
+
+            <form action="#">
+                <label for="image_file">Select Image</label>
+                <input type="file" id="image_file">
+            </form>
+</body>
+</html>

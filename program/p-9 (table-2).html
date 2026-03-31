@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+</head>
+<body>
+    <h1>columns with the "colgroup" and "col" tags</h1>
+    <table border="2px" width="50%" align="center" style="text-align: center; color: white;">
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:blue">
+    <col style="background-color:green">
+  </colgroup>
+  <tr>
+    <th>Name</th>
+    <th>Rno</th>
+    <th>Marks</th>
+    <th>Subject</th>
+  </tr>
+  <tr>
+    <td>Amit</td>
+    <td>3</td>
+    <td>78</td>
+    <td>BCA</td>
+  </tr>
+  <tr>
+    <td>Sunil</td>
+    <td>1</td>
+    <td>81</td>
+    <td>BCA</td>
+  </tr>
+</table>
+
+<hr />
+
+<h1>Table with a "thead", "tbody", and a "tfoot" element</h1>
+<table border="2px" width="70%" style="background-color: rgb(235, 203, 21);" cellpadding="10" cellspacing="5">
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Mark</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Second</td>
+      <td>70</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>130</td>
+    </tr>
+  </tfoot>
+  </table>
+
+  <hr />
+
+  <h1>Colspan attribute</h1>
+  <table style="width:100%; background-color: cadetblue;" border="2px">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>Vikas</td>
+            <td>9198765432</td>
+            <td>8532456789</td>
+        </tr>
+        <tr>
+            <td>Durgesh</td>
+            <td>7798765432</td>
+            <td>8932456789</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <h1>Rowspan attribute</h1>
+    <table style="width:100%; background-color:crimson;" border="2px">
+    <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="3">Subject</th>
+    </tr>
+    <tr>
+        <th>Hindi</th>
+        <th>English</th>
+        <th>Computer</th>
+    </tr>
+    <tr>
+        <td>Deepak</td>
+        <td>66</td>
+        <td>73</td>
+        <td>81</td>
+    </tr>
+    <tr>
+        <td>Mukesh</td>
+        <td>89</td>
+        <td>61</td>
+        <td>72</td>
+    </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+     <!-- https://www.geeksforgeeks.org/html/html-forms/ 
+     https://www.w3schools.com/html/html_forms.asp -->
+
+     <h1>Commonly Used Input Types in HTML Forms</h1>
+     <p>* &lt;input type="password"&gt; :- is used to specify the password field of the input tag. Password should be served over the HTTPS pages because it includes the sensitive information of the user.</p>
+
+        <form>
+            <label for="paswword">Password:</label>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+        
+        <p>========================================================</p>
+
+        <p>* &lt;input type="submit"&gt; :- is used to define a button that submits form data to the server when clicked. It is commonly used in various forms, such as email forms, contact forms, or login forms, to send the data for processing.</p>
+
+        <form action="#">
+            <label for="uname">User Name:</label>
+            <input type="text" id="uname" name="uname" autocomplete="uname">
+            <br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+         <h4>Attributes</h4>
+            <p>A. value:- Specifies the text displayed on the submit button.
+
+                <form action="#">
+                    <input type="submit" value="Submit">
+                </form>
+            <p>========================================================</p>
+
+            <p>B. name :- Defines a name for the submit button, useful for identifying the button in the form data.</p>
+
+                <form>
+                    Username:
+                    <input type="text"/>
+                    <br /><br />
+                    Password:
+                    <input type="password" name="pwd" />
+                    <br /><br />
+                    <button type="submit" name="submit">Submit</button>
+                </form>
+            <p>========================================================</p>
+
+            <p>C. disabled :- Disables the submit button, preventing the form from being submitted.</p>
+
+                <form>
+                    Username:
+                    <input type="text"/>
+                    <br /><br />
+                    Password:
+                    <input type="password" name="pwd" />
+                    <br /><br />
+                    <button type="submit" disabled>Submit</button>
+                </form>
+            <p>========================================================</p>
+
+            <p>D. autofocus :- Automatically focuses the submit button when the page loads.</p>
+                
+                <form>
+                    Username:
+                    <input type="text"/>
+                    <br /><br />
+                    Password:
+                    <input type="password" name="pwd" />
+                    <br /><br />
+                    <button type="submit" autofocus>Submit</button>
+                </form>
+</body>
+</html> 
